@@ -1,0 +1,21 @@
+{
+    "name": "bpa/notifications-mattermost",
+    "description": "A notification handler for Mattermost",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Paap",
+            "email": "benjamin.paap@gmail.com"
+        }
+    ],
+    "require": {
+        "bpa/notifications": "~1.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bpa\\Notifications\\Handler\\": "src/"
+        }
+    }
+}
