@@ -54,7 +54,7 @@ class MattermostHandler implements HandlerInterface
      */
     public function notify(MessageInterface $message)
     {
-        if (false === $message->getRoom() instanceof SlackRoom) {
+        if (false === $message->getRoom() instanceof MattermostRoom) {
             return false;
         }
 
